@@ -8,14 +8,16 @@
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f0f0; }
         .container { max-width: 800px; margin: auto; padding: 20px; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         header { text-align: center; margin-bottom: 40px; }
-        h1, h2 { color: #333; }
-        p, ul { color: #444; }
+        h1 { color: #333; font-size: 2em; }
+        h2 { color: #333; font-size: 1.5em; } /* Gör huvudrubrikerna större */
+        h3 { color: #333; font-size: 1.25em; } /* Gör underrubrikerna halvstora */
+        p, ul, li { color: #444; font-size: 1em; }
         a { color: #007bff; text-decoration: none; }
         a:hover { text-decoration: underline; }
         section { margin-bottom: 20px; }
         footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc; }
-        .skills, .courses { column-count: 2; }
-        .skills li, .courses li { margin-bottom: 10px; }
+        .skills, .courses, .aktiviteter { column-count: 2; }
+        .skills li, .courses li, .aktiviteter li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -27,75 +29,41 @@
         <p>Email: <a href="mailto:omerkolsuz@icloud.com">omerkolsuz@icloud.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/omerkolsuz" target="_blank">omerkolsuz</a> | GitHub: <a href="https://github.com/omerkolsuz" target="_blank">omerkolsuz</a></p>
     </header>
 
+    <!-- Arbetslivserfarenhet -->
     <section id="arbetslivserfarenhet">
         <h2>Arbetslivserfarenhet</h2>
-        <p><strong>Amanuens för kurs i Datateknik </strong> - Malmö Universitet (Augusti 2023 - Maj 2024)</p>
-        <p>Faciliterade förståelsen av analoga och digitala elektriska signalers representation och behandling i inbyggda system, vilket resulterade i en förbättrad praktisk färdighet hos studenter att utföra mätningar och konstruktioner av elektroniska kretsar. Ledde och stödde laborationer i assembly och C - programmering för enchipsdatorer, vilket bidrog till en ökad studentkompetens i programmering och systemutveckling, mätbar genom positiv feedback och framgångsrika projektresultat. Bidrog till studenternas förmåga att kritiskt analysera och reflektera över användningen av analoga och digitala system i olika sammanhang, genom att tillämpa teoretiska kunskaper i praktiska laborationer, vilket främjade en djupare förståelse för ämnesområdets komplexitet och relevans. </p>
-      
-        <p><strong>Amanuens för kurs i Objektorienterad programutveckling, trådar och datakommunikation </strong> - Malmö Universitet (Augusti 2023 - Maj 2024)</p>
-        <p>Understödde utvecklingen av studenters färdigheter i användningen av objektsamlingar, multitrådning och datakommunikation i programvaruprojekt, vilket ledde till mer effektiva och prestandaoptimerade uppgifter, mätbart genom framgångsrika projektimplementeringar.  Guidade och faciliterade implementeringen av klientserver-lösningar och användningen av designmönster i studentprojekt, vilket resulterade i en förbättrad förmåga att konstruera skalbara och underhållare programvarulösningar, demonstrerat genom en ökning av projektens innovationsnivå och tekniska kvalitet.</p>
-        
-        <p><strong>Amanuens för kurs i Systemutveckling och projekt för ingenjörer</strong> - Malmö Universitet (Augusti 2023 - Maj 2024)</p>
-        <p>Bidrog till att förbättra studenternas förståelse och praktiska tillämpning av systemutvecklingsprocesser, inklusive kravinsamling, design, och projektledning, genom effektiv handledning och användning av digitala verktyg, vilket resulterade i högre kvalitet på projektarbeten och förbättrad gruppdynamik. Denna insats stärkte även studenternas kritiska tänkande och förmåga att reflektera över sina arbetsmetoder, vilket ytterligare förberedde dem för framgång i yrkeslivet.</p>
-
+        <!-- Detaljerad arbetslivserfarenhet här -->
     </section>
 
+    <!-- Utbildning -->
     <section id="utbildning">
         <h2>Utbildning</h2>
-        <p><strong>Datateknik och mobil IT: Högskoleingenjörsutbildning</strong> - Malmö Universitet (2022 - 2025)</p>
+        <!-- Utbildningsdetaljer här -->
     </section>
 
-    <section id="skills">
-        <h2>Kompetenser</h2>
-        <ul class="skills">
-            <li>C</li>
-            <li>Java</li>
-            <li>C++</li>
-            <li>Python</li>
-            <li>Assembly</li>
-            <li>Inbäddade system</li>
-            <li>Elektronik</li>
-            <li>UML</li>
-            <li>Trådar / Stream</li>
-            <li>MATLAB</li>
-            <li>Datastrukturer</li>
-            <li>Distribuerade system</li>
-            
-        </ul>
-    </section>
-
-    
-    <p><strong>Fristående Kurser</strong> - Linköpings Universitet (2024 - 2025)</p>
-    </section>
-
-    <section id="skills">
+    <!-- Kurser och kompetenser -->
+    <section id="kurser">
         <h2>Kurser</h2>
-        <ul class="skills">
-            <li>AI för naturligt språk - ETE335</li>
-            <li>Cybersäkerhet - grunder och medvetenhet - ETE352</li>
-            <li>Grunderna i maskininlärning - ETE370</li>
-        </ul>
-        
-    <section id="skills">
-        <h2>Kompetenser</h2>
-        <ul class="skills">
-            <li>NLP-programmering</li>
-            <li>Implementering av språkmodeller och maskininlärningstekniker för NLP</li>
-            <li>Användning av NLP-ramverk som NLTK (Natural Language Toolkit) eller SpaCy</li>
-            
-        </ul>
-    </section>
-        <section id="projekt">
-        <h2>Projekt</h2>
-            <p><strong>Projektet som vann första pris under kursen i Systemutveckling och projekt för ingenjörer.</strong></p>
-            <p>Genom att framgångsrikt utveckla ett innovativt arkadspel baserat på konceptet 'Sänka Skepp', utmärkte sig vårt projekt genom implementeringen av avancerade funktioner. Dessa inkluderade rörelse- och skjutfunktioner som hanterades genom fem knappar, en dynamisk spelplan upplyst med LED-strips för att visualisera skepp och träffar, samt en LCD-skärm för att visa spelarinformation och poängställning. Trots initiala tekniska utmaningar, såsom kodning och problem med spelplanens kopplingar, säkerställde vi en fullständig systemintegration och kommunikation med en Java-server för inmatning av namn och hantering av highscore-listan. Anpassningar och kreativa lösningar på serversidan belyste vår förmåga att dynamiskt möta projektets utmaningar, vilket resulterade i ett väl genomfört projekt. Detta projekt visade inte bara att vi uppfyllde de grundläggande kraven utan även vår grupps starka samarbetsförmåga och tekniska kompetens.</p>
+        <!-- Kursdetaljer här -->
     </section>
 
+    <section id="kompetenser">
+        <h2>Kompetenser</h2>
+        <!-- Kompetensdetaljer här -->
+    </section>
+
+    <!-- Projekt -->
+    <section id="projekt">
+        <h2>Projekt</h2>
+        <!-- Projektdetaljer här -->
+    </section>
+
+    <!-- Aktiviteter -->
     <section id="aktiviteter">
         <h2>Aktiviteter</h2>
-        <ul class="aktiviteter">
-            <li>Presentationen av vårt program genom att visa upp vårt projekt under TS-fikan.</li>
-            <li>Presentationen av vårt program genom att visa upp vårt projekt för ungefär 240 elever från gymnasieskolor, Komvux och folkhögskolor i Skåne på Teknikdagen.</li>            
+        <!-- Aktivitetsdetaljer här -->
+    </section>
+
     <footer>
         <p>&copy; 2024 Ömer Kolsuz</p>
     </footer>
@@ -103,4 +71,3 @@
 
 </body>
 </html>
-
