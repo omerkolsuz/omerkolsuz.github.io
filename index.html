@@ -1,131 +1,317 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ömer Kolsuz - Professionell Portfölj</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #343a40;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        header h1 {
-            font-size: 2.5em;
-            color: #007bff;
-        }
-        header p {
-            margin: 10px 0;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #495057;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #868e96;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ömer Kolsuz - Akademisk Portfölj</title>
+  <style>
+    /* Grundinställningar */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Huvudcontainer */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+
+    header p {
+      margin-bottom: 0.25rem;
+    }
+
+    header .kontakt a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    header .kontakt a:hover {
+      text-decoration: underline;
+    }
+
+    /* Avsnittstitlar */
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      color: #2c3e50;
+      border-left: 5px solid #007bff;
+      padding-left: 10px;
+    }
+
+    h3 {
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #007bff;
+    }
+
+    /* Brödtext och listor */
+    p, li {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+
+    strong {
+      color: #2c3e50;
+    }
+
+    /* Kolumner för kompetenser m.m. */
+    .skills,
+    .courses,
+    .certs {
+      column-count: 2;
+      column-gap: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .skills li,
+    .courses li,
+    .certs li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Avsnittsindelning */
+    section {
+      margin-bottom: 20px;
+    }
+
+    /* Avslutande text och styling av referenser */
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Ömer Kolsuz</h1>
-            <p>Studerande inom Datateknik och Mobil IT vid Malmö Universitet</p>
-            <p>Email: <a href="mailto:omerkolsuz@icloud.com">omerkolsuz@icloud.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/omerkolsuz" target="_blank">omerkolsuz</a> | GitHub: <a href="https://github.com/omerkolsuz" target="_blank">omerkolsuz</a></p>
-        </header>
 
-        <section id="introduktion">
-            <h2>Introduktion</h2>
-            <p>Jag är en passionerad student inom Datateknik och Mobil IT vid Malmö Universitet. Genom att arbeta som amanuens och delta i flera projekt har jag utvecklat starka tekniska färdigheter och en förmåga att lösa komplexa problem. Mina intressen inkluderar inbäddade system och programmering inom IoT.</p>
-        </section>
-
-        <section id="utbildning">
-            <h2>Utbildning</h2>
-            <ul>
-                <li><strong>Datateknik och Mobil IT</strong> - Malmö Universitet (2022 - 2025)</li>
-                <li><strong>Cybersäkerhet, AI för NLP, Maskininlärning</strong> - Linköpings Universitet (2024)</li>
-                <li><strong>Tillämpad IoT</strong> - Linnéuniversitetet (2024)</li>
-            </ul>
-        </section>
-
-        <section id="kompetenser">
-            <h2>Kompetenser</h2>
-            <ul>
-                <li>Programmering: C, C++, Java, Python</li>
-                <li>Verktyg: MATLAB, UML, SQL, Git</li>
-                <li>Metoder: Scrum, Agile utveckling</li>
-                <li>Inbäddade system och mikrocontrollers (ESP32, Arduino, Raspberry Pi)</li>
-            </ul>
-        </section>
-
-        <section id="arbetslivserfarenhet">
-            <h2>Arbetslivserfarenhet</h2>
-            <p><strong>Amanuens</strong> - Malmö Universitet (2023 - Pågående)</p>
-            <ul>
-                <li>Handledde studenter i kurser som inbäddade system, objektorienterad programmering och systemutveckling.</li>
-                <li>Granskade labbrapporter och gav feedback.</li>
-                <li>Assisterade med projektledning och teknisk problemlösning.</li>
-            </ul>
-        </section>
-
-        <section id="projekt">
-            <h2>Projekt</h2>
-            <p><strong>Prisbelönt Arkadspel</strong> - Utvecklat under kursen Systemutveckling och Projekt för Ingenjörer</p>
-            <ul>
-                <li>Implementerade rörelse- och skjutfunktioner med fem knappar.</li>
-                <li>Använde LED-strips och en LCD-skärm för dynamisk visualisering.</li>
-                <li>Integrerade med en Java-server för highscore-hantering.</li>
-            </ul>
-        </section>
-
-        <section id="certifikat">
-            <h2>Certifikat</h2>
-            <ul>
-                <li>AI Infrastructure and Operations Fundamentals - NVIDIA</li>
-                <li>SQL for Data Science - UC Davis</li>
-                <li>Elements of AI - University of Helsinki</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Ömer Kolsuz</p>
-        </footer>
+<div class="container">
+  <!-- HEADER -->
+  <header>
+    <h1>Ömer Kolsuz</h1>
+    <p>Malmö, Sverige | Tel: 070 820 8954</p>
+    <div class="kontakt">
+      <p>
+        E-post: 
+        <a href="mailto:omerkolsuz@icloud.com">omerkolsuz@icloud.com</a> |
+        LinkedIn: 
+        <a href="https://www.linkedin.com/in/omerkolsuz" target="_blank">
+          linkedin.com/in/omerkolsuz
+        </a> |
+        GitHub:
+        <a href="https://github.com/omerkolsuz" target="_blank">
+          github.com/omerkolsuz
+        </a>
+      </p>
     </div>
+    <p><em>“Jag brinner för inbyggda system, programmering och teknik som förenklar människors vardag.”</em></p>
+  </header>
+
+  <!-- INTRODUKTION -->
+  <section id="introduction">
+    <h2>Introduktion</h2>
+    <p>
+      Jag är student inom Datateknik och Mobil IT vid Malmö Universitet. Jag älskar att lösa tekniska problem
+      med programmeringsspråk som C/C++, Java och Python. Genom min roll som amanuens i kurser kring inbyggda system
+      och objektorienterad programmering har jag skaffat mig både tekniska färdigheter och förmågan att förklara komplexa
+      idéer på ett enkelt sätt. 
+    </p>
+    <p>
+      För närvarande utforskar jag Internet of Things och programmering av inbyggda system. Mina certifieringar inom AI 
+      och dataanalys ger mig verktygen att arbeta med avancerad teknik och förbereder mig för kommande utmaningar i branschen.
+    </p>
+  </section>
+
+  <!-- UTBILDNING -->
+  <section id="utbildning">
+    <h2>Utbildning</h2>
+
+    <h3>B.Sc. i Datateknik och Mobil IT</h3>
+    <p>
+      <strong>Malmö Universitet (Aug 2022 - Juni 2025)</strong><br>
+      Fokuserar på programmering, inbyggda system, elektronik och systemutveckling.
+    </p>
+
+    <h3>Cybersecurity, AI för NLP och Maskininlärning</h3>
+    <p>
+      <strong>Linköpings Universitet (Jan 2024 - Jun 2024)</strong><br>
+      Fördjupad inblick i säkerhet, naturlig språkbehandling och praktiska ML-metoder.
+    </p>
+
+    <h3>Applied Internet of Things</h3>
+    <p>
+      <strong>Linnaeus University (Maj 2024 - Aug 2024)</strong><br>
+      Fokus på IoT-arkitekturer, anslutna enheter och distribuerade system.
+    </p>
+  </section>
+
+  <!-- KURSER & FRISTÅENDE KURSER -->
+  <section id="kurser">
+    <h2>Kurser</h2>
+    <ul class="courses">
+      <li>AI för naturligt språk (ETE335)</li>
+      <li>Cybersäkerhet – grunder och medvetenhet (ETE352)</li>
+      <li>Grunderna i maskininlärning (ETE370)</li>
+    </ul>
+    <p>
+      <strong>Fristående Kurser - Linköpings Universitet (2024 - 2025)</strong>
+    </p>
+  </section>
+
+  <!-- ARBETSLIVSERFARENHET -->
+  <section id="arbetslivserfarenhet">
+    <h2>Arbetslivserfarenhet</h2>
+    <p>
+      <strong>Teaching Assistant / Amanuens </strong> – Malmö Universitet (Aug 2023 - Pågående)
+    </p>
+    <ul>
+      <li>
+        Stöttat kurser inom Elektronik, Inbyggda System, Objektorienterad Programmering, 
+        Systemutveckling samt Trådar och Kommunikation.
+      </li>
+      <li>
+        Granskade labbar, gav feedback och handledde studenter i praktiska projekt.
+      </li>
+      <li>
+        Ledde laborationer i C-programmering, systemutveckling och trådbaserad kommunikation.
+      </li>
+      <li>
+        Hjälpte till med felsökning och projektvägledning, vilket förbättrade studenternas förståelse
+        för inbyggda system och OOP.
+      </li>
+    </ul>
+
+    <p>
+      <strong>Volunteer </strong> – Röda Korset, Malmö (Startar Okt 2024)
+    </p>
+    <p>
+      Engagerar mig i frivilligt arbete och samhällsprojekt för att stödja lokalbefolkningen genom olika initiativ
+      och evenemang.
+    </p>
+  </section>
+
+  <!-- TEKNISKA KOMPETENSER -->
+  <section id="kompetenser">
+    <h2>Tekniska Kompetenser</h2>
+    <ul class="skills">
+      <li>C/C++</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Assembly</li>
+      <li>Inbäddade system (ESP32, Arduino, Raspberry Pi)</li>
+      <li>Elektronik</li>
+      <li>UML</li>
+      <li>Trådar / Multitrådning</li>
+      <li>MATLAB</li>
+      <li>SQL</li>
+      <li>NetLogo</li>
+      <li>Datastrukturer och algoritmer</li>
+      <li>Distribuerade system</li>
+      <li>Scrum och Agil utveckling</li>
+    </ul>
+    <h3>Kompetenser inom NLP och AI</h3>
+    <ul class="skills">
+      <li>NLP-programmering</li>
+      <li>Implementering av språkmodeller och ML-tekniker för NLP</li>
+      <li>Användning av NLP-ramverk som NLTK eller SpaCy</li>
+    </ul>
+  </section>
+
+  <!-- PROJEKT -->
+  <section id="projekt">
+    <h2>Projekt</h2>
+    <p>
+      <strong>Prisbelönt Arkadspelsprojekt (Jan 2023 - Maj 2023)</strong><br>
+      Utvecklade ett arcade-game baserat på “Sänka Skepp” där avancerade funktioner som rörelse- 
+      och skjutfunktionalitet hanterades via fem knappar. Spelplanen var dynamisk med LED-strips 
+      för att visualisera skepp och träffar, samt en LCD-skärm för spelarinformation och poäng. 
+      Systemet kommunicerade med en Java-server för highscore-hantering. Trots tekniska utmaningar
+      som krävde kreativa lösningar i både hård- och mjukvara, lyckades projektet ge en komplett
+      spelupplevelse och belönades med högsta betyg.
+    </p>
+  </section>
+
+  <!-- AKTIVITETER -->
+  <section id="aktiviteter">
+    <h2>Aktiviteter</h2>
+    <ul>
+      <li>
+        Demovisning av arkadspelet på universitetsevenemang och teknikdagar, vilket lockade över 240 besökare 
+        från gymnasieskolor, Komvux och folkhögskolor i Skåne.
+      </li>
+      <li>
+        Presentation av programmet Datateknik & Mobil IT för potentiella studenter under öppet hus och andra 
+        rekryteringstillfällen.
+      </li>
+    </ul>
+  </section>
+
+  <!-- CERTIFIKAT -->
+  <section id="certifikat">
+    <h2>Certifikat</h2>
+    <ul class="certs">
+      <li>AI Infrastructure and Operations Fundamentals - NVIDIA (Verify Certificate)</li>
+      <li>SQL for Data Science - University of California, Davis (Verify Certificate)</li>
+      <li>What is Data Science? - IBM (Verify Certificate)</li>
+      <li>Generative AI: Introduction and Applications - IBM (Verify Certificate)</li>
+      <li>Introduction to Artificial Intelligence (AI) - IBM (Verify Certificate)</li>
+      <li>Elements of AI - University of Helsinki & Reaktor (Verify Certificate)</li>
+      <li>Introduction to Agile Development and Scrum - IBM (Verify Certificate)</li>
+    </ul>
+  </section>
+
+  <!-- REFERENSER -->
+  <section id="referenser">
+    <h2>Referenser</h2>
+    <ul>
+      <li><strong>Mats Syde</strong> – Program Director, Malmö University (040 665 8330)</li>
+      <li><strong>Magnus Krampell</strong> – Lecturer, Malmö University (040 665 7136)</li>
+      <li><strong>Gion Koch Svedberg</strong> – Senior Lecturer, Malmö University (040 665 7658)</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 Ömer Kolsuz</p>
+    <p>
+      Tack för att du besöker min akademiska portfölj!
+    </p>
+  </footer>
+
+</div>
 </body>
 </html>
