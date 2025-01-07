@@ -84,17 +84,50 @@
       color: #2c3e50;
     }
 
-    /* Kolumner för kompetenser, certifikat etc. */
-    .skills,
-    .certs {
-      column-count: 2;
-      column-gap: 2rem;
-      margin-bottom: 1rem;
+    /* Rubriker för kurslistorna */
+    .kurstitel {
+      font-weight: bold;
+      margin-top: 1rem;
     }
 
-    .skills li,
-    .certs li {
-      margin-bottom: 0.5rem;
+    /* Förbättrad layout för certifikatlistan */
+    .cert-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;            /* utrymme mellan kolumnerna */
+      margin-bottom: 1rem;
+      list-style: none;     /* tar bort standardpunkterna */
+      padding-left: 0;      /* tar bort ev. standardmarginal */
+    }
+    .cert-item {
+      flex: 1 1 45%;        /* två kolumner om möjligt */
+      margin-bottom: 1rem;
+      min-width: 280px;     /* ser till att det inte blir för smalt */
+    }
+    .cert-item strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+      color: #2c3e50;
+    }
+    .cert-item a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .cert-item a:hover {
+      text-decoration: underline;
+    }
+    /* Liten extra styling för "NVIDIA", "IBM" etc. */
+    .cert-org {
+      font-style: italic;
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+    .cert-verify {
+      margin-bottom: 0.3rem;
+      display: block;
+      font-size: 0.95rem;
+      color: #555;
     }
 
     /* Avsnittsindelning */
@@ -127,9 +160,13 @@
         E-post: 
         <a href="mailto:omerkolsuz@icloud.com">omerkolsuz@icloud.com</a> |
         LinkedIn: 
-        <a href="https://www.linkedin.com/in/omerkolsuz" target="_blank">linkedin.com/in/omerkolsuz</a> |
+        <a href="https://www.linkedin.com/in/omerkolsuz" target="_blank">
+          linkedin.com/in/omerkolsuz
+        </a> |
         GitHub:
-        <a href="https://github.com/omerkolsuz" target="_blank">github.com/omerkolsuz</a>
+        <a href="https://github.com/omerkolsuz" target="_blank">
+          github.com/omerkolsuz
+        </a>
       </p>
     </div>
     <p><em>“Jag brinner för inbyggda system, programmering och teknik som förenklar människors vardag.”</em></p>
@@ -200,56 +237,40 @@
   <!-- KURSER -->
   <section id="kurser">
     <h2>Kurser</h2>
-    <!-- Kurser för B.Sc. i Datateknik och Mobil IT (Malmö Universitet) -->
+    
     <h3>B.Sc. i Datateknik och Mobil IT (Malmö Universitet, 2022 - 2026)</h3>
-    
-    <!-- Termin 1, hösten 2023 -->
-    <strong>Termin 1 (Hösten 2023)</strong>
-    <ul>
-      <li>Datateknik (DA215A, 15 hp) - Inget huvudområde</li>
-      <li>Objektorienterad programmering (DA339A, 15 hp) - Huvudområde: Datavetenskap</li>
-    </ul>
-    
-    <!-- Termin 2, våren 2024 -->
-    <strong>Termin 2 (Våren 2024)</strong>
-    <ul>
-      <li>Objektorienterad programutveckling, trådar och datakommunikation (DA343A, 7.5 hp) - Datavetenskap</li>
-      <li>Dator- och internetteknik (DA216A, 7.5 hp) - Inget huvudområde</li>
-      <li>Systemutveckling och projekt för ingenjörer (DA393A, 15 hp) - Datavetenskap</li>
+
+    <!-- Obs! Termin-rubrikerna är borttagna, men kurserna finns kvar. -->
+    <ul class="kurser-mu">
+      <!-- Termin 1 -->
+      <li class="kurstitel">Datateknik (DA215A, 15 hp) - Inget huvudområde</li>
+      <li class="kurstitel">Objektorienterad programmering (DA339A, 15 hp) - Datavetenskap</li>
+
+      <!-- Termin 2 -->
+      <li class="kurstitel">Objektorienterad programutveckling, trådar och datakommunikation (DA343A, 7.5 hp) - Datavetenskap</li>
+      <li class="kurstitel">Dator- och internetteknik (DA216A, 7.5 hp) - Inget huvudområde</li>
+      <li class="kurstitel">Systemutveckling och projekt för ingenjörer (DA393A, 15 hp) - Datavetenskap</li>
+
+      <!-- Termin 3 -->
+      <li class="kurstitel">Analys A och linjär algebra (MA209A, 15 hp) - Inget huvudområde</li>
+      <li class="kurstitel">Programmering av inbyggda system (DA267A, 7.5 hp) - Inget huvudområde</li>
+      <li class="kurstitel">Mobila system (DA268A, 7.5 hp) - Inget huvudområde</li>
+
+      <!-- Termin 4 -->
+      <li class="kurstitel">Modeller och verklighet för datateknik (FY126A, 7.5 hp) - Inget huvudområde</li>
+      <li class="kurstitel">Signalbehandling (DA383A, 7.5 hp) - Inget huvudområde</li>
+      <li class="kurstitel">Analys B (MA222A, 7.5 hp) - Inget huvudområde</li>
+      <li class="kurstitel">Distributed Intelligent Systems (DA382A, 7.5 hp) - Datavetenskap</li>
+
+      <!-- Termin 5 -->
+      <li class="kurstitel">Ingenjörsprojekt med programvaruteknik (DA298A, 15 hp) - Datavetenskap</li>
+      <li class="kurstitel">Artificial Intelligence (DA272A, 7.5 hp) - Datavetenskap</li>
+      <li class="kurstitel">Datavetenskap: C++ och programkonstruktion (DA378A, 7.5 hp) - Datavetenskap</li>
+
+      <!-- Termin 6 -->
+      <li class="kurstitel">Ingenjörsmässig problemlösning och examensarbete (DA340B, 30 hp) - Inget huvudområde</li>
     </ul>
 
-    <!-- Termin 3, hösten 2024 -->
-    <strong>Termin 3 (Hösten 2024)</strong>
-    <ul>
-      <li>Analys A och linjär algebra (MA209A, 15 hp) - Inget huvudområde</li>
-      <li>Programmering av inbyggda system (DA267A, 7.5 hp) - Inget huvudområde</li>
-      <li>Mobila system (DA268A, 7.5 hp) - Inget huvudområde</li>
-    </ul>
-
-    <!-- Termin 4, våren 2025 -->
-    <strong>Termin 4 (Våren 2025)</strong>
-    <ul>
-      <li>Modeller och verklighet för datateknik (FY126A, 7.5 hp) - Inget huvudområde</li>
-      <li>Signalbehandling (DA383A, 7.5 hp) - Inget huvudområde</li>
-      <li>Analys B (MA222A, 7.5 hp) - Inget huvudområde</li>
-      <li>Distributed Intelligent Systems (DA382A, 7.5 hp) - Datavetenskap</li>
-    </ul>
-
-    <!-- Termin 5, hösten 2025 -->
-    <strong>Termin 5 (Hösten 2025)</strong>
-    <ul>
-      <li>Ingenjörsprojekt med programvaruteknik (DA298A, 15 hp) - Datavetenskap</li>
-      <li>Artificial Intelligence (DA272A, 7.5 hp) - Datavetenskap</li>
-      <li>Datavetenskap: C++ och programkonstruktion (DA378A, 7.5 hp) - Datavetenskap</li>
-    </ul>
-
-    <!-- Termin 6, våren 2026 -->
-    <strong>Termin 6 (Våren 2026)</strong>
-    <ul>
-      <li>Ingenjörsmässig problemlösning och examensarbete (DA340B, 30 hp) - Inget huvudområde</li>
-    </ul>
-
-    <!-- Linköpings Universitet -->
     <h3>Cybersecurity, AI för NLP, Maskininlärning (Linköpings Universitet, 2024)</h3>
     <ul>
       <li>Cybersäkerhet – grunder och medvetenhet (ETE352)</li>
@@ -257,7 +278,6 @@
       <li>Grunderna i maskininlärning (ETE370)</li>
     </ul>
 
-    <!-- Linnaeus University -->
     <h3>Applied Internet of Things (Linnaeus University, 2024)</h3>
     <ul>
       <li>IoT-arkitekturer</li>
@@ -331,65 +351,51 @@
     </ul>
   </section>
 
-  <!-- CERTIFIKAT -->
+  <!-- CERTIFIKAT (med bättre utseende & "Verifiera") -->
   <section id="certifikat">
     <h2>Certifikat</h2>
-    <ul class="certs">
-      <li>
-        <strong>AI Infrastructure and Operations Fundamentals</strong> – NVIDIA<br>
-        Verify Certificate<br>
-        Exempellänk: 
-        <a href="https://www.coursera.org/account/accomplishments/verify/UXMSXZS8NGZR" target="_blank">
-          nvidia-cert
-        </a>
+    <ul class="cert-list">
+      <li class="cert-item">
+        <strong>AI Infrastructure and Operations Fundamentals</strong>
+        <span class="cert-org">NVIDIA</span>
+        <span class="cert-verify">Verify Certificate</span>
+        <a href="https://www.coursera.org/account/accomplishments/verify/UXMSXZS8NGZR" target="_blank">Verifiera</a>
       </li>
-      <li>
-        <strong>SQL for Data Science</strong> – University of California, Davis<br>
-        Verify Certificate<br>
-        Exempellänk: 
-        <a href="https://www.coursera.org/account/accomplishments/verify/QLJPXBEYSHV9" target="_blank">
-          ucdavis-cert
-        </a>
+      <li class="cert-item">
+        <strong>SQL for Data Science</strong>
+        <span class="cert-org">University of California, Davis</span>
+        <span class="cert-verify">Verify Certificate</span>
+        <a href="https://www.coursera.org/account/accomplishments/verify/QLJPXBEYSHV9" target="_blank">Verifiera</a>
       </li>
-      <li>
-        <strong>What is Data Science?</strong> – IBM<br>
-        Verify Certificate<br>
-        Exempellänk: 
-        <a href="https://www.coursera.org/account/accomplishments/verify/846JEKK7B5G8" target="_blank">
-          ibm-datascience
-        </a>
+      <li class="cert-item">
+        <strong>What is Data Science?</strong>
+        <span class="cert-org">IBM</span>
+        <span class="cert-verify">Verify Certificate</span>
+        <a href="https://www.coursera.org/account/accomplishments/verify/846JEKK7B5G8" target="_blank">Verifiera</a>
       </li>
-      <li>
-        <strong>Generative AI: Introduction and Applications</strong> – IBM<br>
-        Verify Certificate<br>
-        Exempellänk: 
-        <a href="https://www.coursera.org/account/accomplishments/verify/662HDRXSGA2B" target="_blank">
-          ibm-generative-ai
-        </a>
+      <li class="cert-item">
+        <strong>Generative AI: Introduction and Applications</strong>
+        <span class="cert-org">IBM</span>
+        <span class="cert-verify">Verify Certificate</span>
+        <a href="https://www.coursera.org/account/accomplishments/verify/662HDRXSGA2B" target="_blank">Verifiera</a>
       </li>
-      <li>
-        <strong>Introduction to Artificial Intelligence (AI)</strong> – IBM<br>
-        Verify Certificate<br>
-        Exempellänk: 
-        <a href="https://www.coursera.org/account/accomplishments/verify/8XYLGATUB9NC" target="_blank">
-          ibm-intro-ai
-        </a>
+      <li class="cert-item">
+        <strong>Introduction to Artificial Intelligence (AI)</strong>
+        <span class="cert-org">IBM</span>
+        <span class="cert-verify">Verify Certificate</span>
+        <a href="https://www.coursera.org/account/accomplishments/verify/8XYLGATUB9NC" target="_blank">Verifiera</a>
       </li>
-      <li>
-        <strong>Elements of AI</strong> – University of Helsinki and Reaktor<br>
-        Verify Certificate<br>
-        Exempellänk: 
-        <a href="https://certificates.mooc.fi/validate/29aif9ovjls" target="_blank">
-          elements-of-ai
-        </a>
+      <li class="cert-item">
+        <strong>Elements of AI</strong>
+        <span class="cert-org">University of Helsinki and Reaktor</span>
+        <span class="cert-verify">Verify Certificate</span>
+        <a href="https://certificates.mooc.fi/validate/29aif9ovjls" target="_blank">Verifiera</a>
       </li>
-      <li>
-        <strong>Introduction to Agile Development and Scrum</strong> – IBM<br>
-        Verify Certificate<br>
-        Exempellänk: 
-        <a href="https://www.coursera.org/account/accomplishments/verify/F86VU4DFHL9K" target="_blank">
-          ibm-agile-scrum
-        </a>
+      <li class="cert-item">
+        <strong>Introduction to Agile Development and Scrum</strong>
+        <span class="cert-org">IBM</span>
+        <span class="cert-verify">Verify Certificate</span>
+        <a href="https://www.coursera.org/account/accomplishments/verify/F86VU4DFHL9K" target="_blank">Verifiera</a>
       </li>
     </ul>
   </section>
@@ -406,7 +412,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 - 2026 Ömer Kolsuz</p>
+    <p>&copy; 2026 Ömer Kolsuz</p>
     <p>Tack för att du besöker min akademiska portfölj!</p>
   </footer>
 
